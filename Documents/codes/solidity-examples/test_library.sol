@@ -6,11 +6,12 @@ contract TestLibrary {
   using IntExtended for uint;
 
   function testIncrement(uint _base) returns (uint) {
-    return _base.increment();
+    //Static contest
+    return IntExtended.increment(_base);
   }
 
   function testDecrement(uint _base) returns (uint) {
-    return _base.decrement();
+    return IntExtended.decrement(_base);
   }
 
   function testIncrementByValue(uint _base, uint _value) returns (uint) {
